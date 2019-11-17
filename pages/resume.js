@@ -8,6 +8,7 @@ const Resume = () => (
         href="https://fonts.googleapis.com/css?family=Montserrat:500,700|Roboto&display=swap"
         rel="stylesheet"
       />
+      <link href="/static/styles.css" rel="stylesheet" />
     </Head>
     <aside className="aside">
       <section>
@@ -28,12 +29,12 @@ const Resume = () => (
               contact@andrewbdesign.com
             </a>
           </p>
-          <p>
+          {/*<p>
             <a href="tel:+61450250792">
               <img className="icons icon-phone" src="/static/icons/phone.svg" />
               0450 250 792
             </a>
-          </p>
+          </p> */}
           <p>
             <img
               className="icons icon-location"
@@ -110,7 +111,7 @@ const Resume = () => (
             </a>
           </p>
         </div>
-        <div className="social-details">
+        <div className="resume-details">
           <h2 className="social-title">Resume</h2>
           <a
             className="download-btn"
@@ -128,64 +129,160 @@ const Resume = () => (
       <section className="projects">
         <h2 className="title-section">Projects</h2>
         <div className="project">
-          <h3 className="title">Project Reset: (Commercial project)</h3>
-          <p className="scope">
-            Scope: Qantas Frequent Flyer program was going to make major changes
-            to their loyalty program. To build a landing page to showcase these
-            changes. Expected daily traffic was 12 million users.
-          </p>
-          <p className="role">
-            Role: Built the front end. Browser supporting up to IE10. Created
-            interactive components that communicated with Qantas backend API.{' '}
-          </p>
-          <p className="tech">
-            Technologies: CSS/SCSS, JavaScript/ES6, React, GreenSock, Lottie
-          </p>
-          <p className="url">URL: https://frequentflyer.qantas.com</p>
+          <div className="title-group">
+            <h3 className="title">Project Reset</h3>
+          </div>
+          <div className="project-summary">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Client</td>
+                  <td>Qantas</td>
+                </tr>
+                <tr>
+                  <td>Scope</td>
+                  <td>
+                    Qantas Frequent Flyer program was going to make major
+                    changes to their loyalty program. To build a landing page to
+                    showcase these changes. Expected daily traffic was 12
+                    million users.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Role</td>
+                  <td>
+                    Built the front end. Browser supporting up to IE10. Created
+                    interactive components that communicated with Qantas backend
+                    API.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Tech</td>
+                  <td>CSS/SCSS, JavaScript/ES6, React, GreenSock, Lottie</td>
+                </tr>
+                <tr>
+                  <td>URL</td>
+                  <td>
+                    <a href="https://frequentflyer.qantas.com">
+                      https://frequentflyer.qantas.com
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
         <div className="project">
-          <h3 className="title">Qantas Car Insurance: (Commercial project)</h3>
-          <p className="scope">
-            Scope: Qantas was going to introduce Car insurance for the first
-            time. Was assigned to build 8 responsive landing pages. Worked with
-            the Qantas design lead and development team in normal HTML, CSS, and
-            JavaScript.
-          </p>
-          <p className="role">
-            Role: Built the frontend in vanilla HTML, CSS, JavaScript. Had to
-            build up to 14 modules according to the design.
-          </p>
-          <p className="tech">
-            Technologies: HTML, CSS/SCSS, JavaScript/ES6, jQuery
-          </p>
-          <p className="url">URL: https://insurance.qantas.com/car-insurance</p>
+          <div className="title-group">
+            <h3 className="title">Qantas Car Insurance</h3>
+          </div>
+          <div className="project-summary">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Client</td>
+                  <td>Qantas</td>
+                </tr>
+                <tr>
+                  <td>Scope</td>
+                  <td>
+                    Qantas was going to introduce Car insurance for the first
+                    time. Was assigned to build 8 responsive landing pages.
+                    Worked with the Qantas design lead and development team in
+                    normal HTML, CSS, and JavaScript.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Role</td>
+                  <td>
+                    Built the frontend in vanilla HTML, CSS, JavaScript. Had to
+                    build up to 14 modules according to the design.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Tech</td>
+                  <td>HTML, CSS/SCSS, JavaScript/ES6, jQuery</td>
+                </tr>
+                <tr>
+                  <td>URL</td>
+                  <td>
+                    <a href="https://insurance.qantas.com/car-insurance">
+                      https://insurance.qantas.com/car-insurance
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
         <div className="project">
-          <h3 className="title">Seek Salary Report: (Commercial project)</h3>
-          <p className="scope">
-            Scope: Seek wanted an interactive salary report for each
-            industry/role and compare it to the country nation salary average.
-            There were 2 versions of the site: the Australian and New Zealand
-            variation. Data was hosted on a cms backend (contentful).
-          </p>
-          <p className="role">
-            Role: Built the front end. Used React for main framework. Website
-            communicated with API via backed cms contentful. Had to build for 4
-            versions: AU candidate, AU hirer, NZ candidate, NZ hirer.
-          </p>
-          <p className="tech">
-            Technologies: CSS/SCSS, JavaScript/ES6, React, GreenSock, ChartJS,
-            contentful
-          </p>
-          <p className="url">
-            URL: https://www.seek.com.au/career-advice/page/salary-insights
-          </p>
+          <div className="title-group">
+            <h3 className="title">Seek Salary Report</h3>
+          </div>
+          <div className="project-summary">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Client</td>
+                  <td>Seek</td>
+                </tr>
+                <tr>
+                  <td>Scope</td>
+                  <td>
+                    Seek wanted an interactive salary report for each
+                    industry/role and compare it to the country nation salary
+                    average. There were 2 versions of the site: the Australian
+                    and New Zealand variation. Data was hosted on a cms backend
+                    (contentful).
+                  </td>
+                </tr>
+                <tr>
+                  <td>Role</td>
+                  <td>
+                    Built the front end. Used React for main framework. Website
+                    communicated with API via backed cms contentful. Had to
+                    build for 4 versions: AU candidate, AU hirer, NZ candidate,
+                    NZ hirer.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Tech</td>
+                  <td>
+                    CSS/SCSS, JavaScript/ES6, React, GreenSock, ChartJS,
+                    contentful
+                  </td>
+                </tr>
+                <tr>
+                  <td>URL</td>
+                  <td>
+                    <a href="https://www.seek.com.au/career-advice/page/salary-insights">
+                      https://www.seek.com.au/career-advice/page/salary-insights
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
       <section className="experience">
-        <h2 className="title-section">Experience</h2>
+        <h2 className="title-section">Work Experience</h2>
         <div className="company">
-          <h3 className="title">Slik - Creative Agency</h3>
+          <div className="title-group">
+            <h3 className="title">JavaScript Front-End Developer</h3>
+            <p className="title-type">Full Time</p>
+          </div>
+          <div className="location-group">
+            <p>SLIK - Redfern, Sydney</p>
+            <p>2015 - 2018, 2019</p>
+          </div>
+          <p className="company-role">
+            <span>Role:</span> Developed dynamic display ads and used GreenSock
+            API for animations. Worked closely with clients such as Qantas,
+            Fairfax/NINE, Suncorp, AAMI, HCF. Developed dynamic display ads that
+            fetched data over APIs.
+          </p>
+          {/*
           <p className="years">2015 - 2018, 2019 - Present</p>
           <p className="role">
             Role: Developed dynamic display ads and used GreenSock API for
@@ -196,10 +293,24 @@ const Resume = () => (
           <p className="tech">
             Technology stack: HTML, CSS/SCSS, JavaScript/ES6, GreenSock library,
             VueJS, React, Angular
-          </p>
+</p>*/}
         </div>
         <div className="company">
-          <h3 className="title">Snakk Media - Creative Agency</h3>
+          <div className="title-group">
+            <h3 className="title">Senior Front-End Developer</h3>
+            <p className="title-type">Full Time</p>
+          </div>
+          <div className="location-group">
+            <p>Snakk Media - Surry Hills, Sydney</p>
+            <p>2018</p>
+          </div>
+          <p className="company-role">
+            <span>Role:</span> Working on the Celtra ad platform. Developed
+            features that weren’t native to the ad platform. Was working as a
+            Front-End Developer. Help the creative team by building prototypes
+            for their ideas. Mobile and tablet testing; debugging on devices
+          </p>
+          {/*<h3 className="title">Snakk Media - Creative Agency</h3>
           <p className="years">2018</p>
           <p className="role">
             Role: Working on the Celtra ad platform. Developed features that
@@ -210,7 +321,7 @@ const Resume = () => (
           <p className="tech">
             Technology stack: HTML, CSS/SCSS, JavaScript/ES6, GreenSock library,
             Celtra
-          </p>
+</p>*/}
         </div>
       </section>
       <section className="hobbies">
@@ -224,6 +335,7 @@ const Resume = () => (
         margin: 0;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
+        // color: #1c1c1c;
       }
       .resume {
         display: flex;
@@ -255,31 +367,40 @@ const Resume = () => (
         color: #fff;
       }
       .contact-details,
-      .social-details {
+      .social-details,
+      .resume-details {
         color: #fff;
         font-size: 0.8rem;
         padding: 2rem 2rem 0;
       }
+      .resume-details {
+        padding: 2rem;
+      }
       .contact-details p,
-      .contact-details a,
       .social-details p,
-      .social-details a {
+      .resume-details p,
+      .contact-details a,
+      .social-details a,
+      .resume-details a {
         display: flex;
         align-items: center;
         color: hsl(220, 54%, 65%);
       }
       .contact-details p,
-      .social-details p {
+      .social-details p,
+      .resume-details p {
         margin: 0 0 10px;
       }
       .contact-details p a,
-      .social-details p a {
+      .social-details p a,
+      .resume-details p a {
         color: inherit;
         text-decoration: none;
         transition: color 0.2s ease-in-out;
       }
       .contact-details p a:hover,
-      .social-details p a:hover {
+      .social-details p a:hover,
+      .resume-details p a:hover {
         // text-decoration: underline;
         color: hsl(220, 54%, 85%);
       }
@@ -305,6 +426,8 @@ const Resume = () => (
       }
       .profile-name {
         margin-top: 10px;
+        font-family: 'Montserrat';
+        font-size: 23px;
       }
       .profile-title {
         color: hsl(221, 53%, 63%);
@@ -342,16 +465,67 @@ const Resume = () => (
         font-family: 'Montserrat', sans-serif;
         margin-bottom: 20px;
       }
-      // PROJECTS
-      .project {
+
+      // EXPERIENCE
+      .title-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         margin-bottom: 20px;
       }
-      .title {
-        font-size: 16px;
-        text-transform: uppercase;
-        letter-spacing: 0.4px;
-        font-family: 'Roboto', sans-serif;
+
+      .title-type {
+        background: #f2f2f2;
+        padding: 8px 14px;
+        border-radius: 30px;
+        font-size: 12px;
+      }
+      .location-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+
+      .company {
+        border-bottom: 1px solid #dadada;
+        padding: 40px 0;
+      }
+
+      .title-section + .company {
+        padding-top: 0;
+      }
+
+      .company-role {
+        color: hsl(0, 0%, 30%);
+      }
+
+      span {
+        color: #000;
         font-weight: 700;
+      }
+
+      // PROJECTS
+      .project {
+        border-bottom: 1px solid #dadada;
+        padding: 40px 0;
+      }
+
+      .title-section + .project {
+        padding-top: 0;
+      }
+
+      td {
+        vertical-align: initial;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        // color: hsl(0, 0%, 30%);
+      }
+
+      // .project-summary {
+      //   display: flex;
+      // }
+      .project-summary p {
+        margin-bottom: 10px;
       }
     `}</style>
   </div>
