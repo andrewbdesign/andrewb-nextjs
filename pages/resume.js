@@ -50,6 +50,10 @@ const Resume = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
+              <img
+                className="icons icon-github"
+                src="/static/icons/github.svg"
+              />
               Github
             </a>
           </p>
@@ -59,6 +63,10 @@ const Resume = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
+              <img
+                className="icons icon-twitter"
+                src="/static/icons/twitter.svg"
+              />
               Twitter
             </a>
           </p>
@@ -68,6 +76,10 @@ const Resume = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
+              <img
+                className="icons icon-linkedin"
+                src="/static/icons/linkedin.svg"
+              />
               LinkedIn
             </a>
           </p>
@@ -77,6 +89,10 @@ const Resume = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
+              <img
+                className="icons icon-codepen"
+                src="/static/icons/codepen.svg"
+              />
               Codepen
             </a>
           </p>
@@ -86,10 +102,15 @@ const Resume = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
+              <img
+                className="icons icon-website"
+                src="/static/icons/website.svg"
+              />
               Website
             </a>
           </p>
-          <a>Download printer-friendly resume</a>
+          <h2 className="social-title">Resume</h2>
+          <a className="download-btn">Download resume</a>
         </div>
       </section>
     </aside>
@@ -294,6 +315,17 @@ const Resume = () => (
       .experience,
       .hobbies {
         margin-bottom: 2rem;
+      }
+
+      .download-btn {
+        background: #fff;
+        padding: 1rem;
+        border-radius: 5px;
+        color: hsl(220, 54%, 47%);
+        font-size: 16px;
+        text-align: center;
+        font-weight: 700;
+        display: inline-block;
       }
     `}</style>
   </div>
