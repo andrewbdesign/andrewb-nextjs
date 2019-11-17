@@ -43,7 +43,7 @@ const Resume = () => (
           </p>
         </div>
         <div className="social-details">
-          <h2 className="social-title">Social</h2>
+          <h2 className="social-title">Social links</h2>
           <p>
             <a
               href="https://www.github.com/andrewbdesign"
@@ -109,15 +109,24 @@ const Resume = () => (
               Website
             </a>
           </p>
+        </div>
+        <div className="social-details">
           <h2 className="social-title">Resume</h2>
-          <a className="download-btn">Download resume</a>
+          <a
+            className="download-btn"
+            href="/static/pdf/andrew-bonifacio-2019.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download resume
+          </a>
         </div>
       </section>
     </aside>
     <main className="main">
       {/* <section className="summary"></section> */}
       <section className="projects">
-        <h2>Projects</h2>
+        <h2 className="title-section">Projects</h2>
         <div className="project">
           <h3 className="title">Project Reset: (Commercial project)</h3>
           <p className="scope">
@@ -174,7 +183,7 @@ const Resume = () => (
         </div>
       </section>
       <section className="experience">
-        <h2>Experience</h2>
+        <h2 className="title-section">Experience</h2>
         <div className="company">
           <h3 className="title">Slik - Creative Agency</h3>
           <p className="years">2015 - 2018, 2019 - Present</p>
@@ -205,7 +214,7 @@ const Resume = () => (
         </div>
       </section>
       <section className="hobbies">
-        <h2>Hobbies</h2>
+        <h2 className="title-section">Hobbies</h2>
         <p>Pingpong, Guitar, Food</p>
       </section>
     </main>
@@ -220,6 +229,7 @@ const Resume = () => (
         display: flex;
         max-width: 960px;
         margin: 0 auto;
+        border: 1px solid #f2f2f2;
       }
       .aside {
         width: 30%;
@@ -286,7 +296,6 @@ const Resume = () => (
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         margin-bottom: 10px;
-        // color: hsl(220, 54%, 26%);
       }
 
       .profile-pic {
@@ -305,6 +314,7 @@ const Resume = () => (
         width: 15px;
         height: 15px;
         padding: 6px;
+        padding-left: 0;
         margin-right: 5px;
       }
       .main {
@@ -325,7 +335,23 @@ const Resume = () => (
         font-size: 16px;
         text-align: center;
         font-weight: 700;
-        display: inline-block;
+        display: inline-block !important;
+        text-decoration: none;
+      }
+      .title-section {
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 20px;
+      }
+      // PROJECTS
+      .project {
+        margin-bottom: 20px;
+      }
+      .title {
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
       }
     `}</style>
   </div>
